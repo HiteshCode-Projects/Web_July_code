@@ -1,0 +1,12 @@
+/* Direclty Start with CSS  */
+
+h2{
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+p{
+    font-family:fantasy;
+    color: blue;
+}
