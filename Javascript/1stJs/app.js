@@ -1,0 +1,1 @@
+console.log("Hi I am from External Js File")
