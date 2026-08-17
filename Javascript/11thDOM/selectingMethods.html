@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myp">This is paragaph Tag</p>
+
+    <div class="shop">This is Div - 0</div>
+    <div class="shop">This is Second Div - 1</div>
+
+    <p>This is Second Paragaph</p>
+    <p>This is Third Paragaph</p>
+
+    <div class="box">This is Div Box - 0</div>
+    <div class="box">This is Div Box - 1</div>
+
+    <script>
+         
+         //document = webpage
+         //element = Tag
+
+         //1. getElementById("Id Name")
+
+        const paragaphtag =   document.getElementById("myp")
+        console.log(paragaphtag)
+        console.log(paragaphtag.textContent)
+
+        //2. getElementsByClassName("Class Name")
+            
+        const divContainer =    document.getElementsByClassName("shop")
+        console.log(divContainer)
+        console.log(divContainer[1])
+        console.log(divContainer[1].textContent)
+
+
+         //3. getElementsBy TagName("TagName")
+
+        const ele  =    document.getElementsByTagName("p")
+        console.log(ele)
+        console.log(ele[1])
+        console.log(ele[1].textContent)
+
+
+
+        //4. querySelector("#Idname , .className , TagName") Follows The Css Selector Rule
+        //Always  Select The First Tag (Only One)
+        const ele1 =      document.querySelector(".box")
+        console.log(ele1)
+
+
+        //5 . querySelectorALL()
+
+        const ele2 =  document.querySelectorAll(".box")
+        console.log(ele2)
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myp">Hello Guys</p>
+
+    <button onclick="ChangeContent()">Change Content</button>
+
+    <button id="btn" onclick="ChnageButton()">Login</button>
+
+    <div id="mydiv">My Div Container</div>
+
+    <button onclick="updateTag()">Change Tag</button>
+
+    <p id="mya">This is Dull Paragapah</p>
+
+    <button onclick="ChangeStyle()">Change Style</button>
+
+    <ul id="list">
+        <li>Water</li>
+    </ul>
+
+    <script>
+        //Chnage of TextCOntent 
+        //1.Select Element(Tag)
+
+        function ChangeContent(){
+
+        const ele =   document.getElementById("myp")
+
+        ele.textContent = "Welcome User , Have a Great Day"
+
+
+        }
+
+        function ChnageButton(){
+            const ele1 = document.getElementById("btn")
+            ele1.textContent = "Logout"
+        }
+       
+
+        //2. Change or Update The tag 
+        // innerHTML
+        
+        function updateTag(){
+
+        const divContainer = document.getElementById("mydiv")
+
+        // divContainer.innerHTML = "<h1>This is Heading Now</h1>"
+
+        divContainer.innerHTML = 
+        `
+        <h2>Iphone</h2>
+        <img src="https://images.pexels.com/photos/13886741/pexels-photo-13886741.jpeg" height="150" width="150">
+        <p>Rs 50,000</p>
+
+        `
+
+        }
+
+
+        //Update Css - .style.propName
+
+        function ChangeStyle(){
+           const ele2 = document.getElementById("mya")
+
+           ele2.style.color = "red"
+           ele2.style.backgroundColor = "black"
+           ele2.style.textAlign = "center"
+           ele2.textContent = "This is New Paragaph"
+        }
+
+
+
+        const ele3 =  document.getElementById("list")
+
+        const liTag = document.createElement("li")
+        liTag.textContent = "Milk"
+
+        ele3.appendChild(liTag)
+
+        
+
+    </script>
+</body>
+</html>

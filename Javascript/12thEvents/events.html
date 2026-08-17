@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv{
+            margin-top: 20px;
+            height: 200px;
+            width: 200px;
+            background: blue;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <h1>Events in Js</h1>
+    <input id="myinput" >
+
+    <div id="mydiv">
+      
+    </div>
+
+    <script>
+        const input = document.getElementById("myinput")
+
+        const divCon = document.getElementById("mydiv")
+
+        //1. KeyUp
+        // input.addEventListener('keyup', function(e){
+                 
+        //     console.log('Key Releasedd ' , e.key)
+
+        // })
+
+
+        // //2.keydown
+        // input.addEventListener('keydown', function(e){
+                 
+        //     console.log('Key Pressed ' , e.key)
+            
+        // })
+
+        //3. Change - Change of Value in Input
+        input.addEventListener('change', function(x){
+            console.log('Input Value ' , x.target.value)
+        })
+
+        //4.mouseover - 
+        divCon.addEventListener('mouseover', function(){
+            divCon.style.backgroundColor= "red"
+        })
+
+         divCon.addEventListener('mouseout', function(){
+            divCon.style.backgroundColor= "green"
+        })
+
+
+    </script>
+</body>
+</html>

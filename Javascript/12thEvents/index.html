@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Add To Cart</button>
+    <p id="rsp"></p>
+
+    <script>
+        //Select Element
+        const button = document.getElementById("btn")
+        const p = document.getElementById("rsp")
+
+        button.addEventListener('click' , function(){
+               p.textContent = "Product Added to cart"
+        })
+    </script>
+</body>
+</html>
