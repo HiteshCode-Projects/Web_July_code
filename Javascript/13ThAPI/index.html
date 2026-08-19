@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+         // https://randomuser.me/api
+
+       //fetch("Api Address")
+       //Rule : Convert The APi Response into JSON format and Then we can use it
+
+       fetch('https://randomuser.me/api')
+
+       //Successfull
+       .then( response =>  response.json() )
+
+       .then(data => console.log(data.results))
+
+
+       //Error/failure
+       .catch(function(error){
+                //error - is parameter/argument - it acts like variable to store the data of erro
+                console.log(' Error Connection ' , error)
+       })
+
+
+    </script>   
+</body>
+</html>
